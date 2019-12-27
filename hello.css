@@ -1,0 +1,15 @@
+h1{color: red;
+  background-color: lightgreen;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 2px 2px 3px black;
+}
+.intro{color: blue;
+font-size: 20px;
+}
+.author{color: purple;
+font-family: monotype corsiva;
+text-align: right;
+}
