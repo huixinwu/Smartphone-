@@ -179,7 +179,7 @@ dt{color: var(--primaryColor);}
   font-weight: 600;
 }
 .activity5_figure{background-color:white;}
-.activity5_figure img{width: 30%; margin-right:2%; height:100%;}
+.activity5_figure img{width: 28%; margin-right:5%; height:100%;}
 .download:hover{background-color: var(--secondaryColor); color: var(--primaryVeryLight);}
 /* --  -- */
 .exercises, .labExp, .wi, .credits{
