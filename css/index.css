@@ -223,7 +223,7 @@ dt, dd b{color: var(--primaryDark);}
   padding: 0.5em;
   color: var(--secondary);
   text-align: center;
-  height: 25em;
+  height: 30em;
   border-radius: 0.5em  0.5em 0em 0em;
 }
 .cardBodyActivity a{
