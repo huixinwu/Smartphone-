@@ -1,0 +1,13 @@
+*{box-sizing: border-box;font-family: monospace ,sans-serif, Arial;
+}
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  --primary:#ff1f1f;
+  --primaryLight: #ff634b;
+  --primaryDark: #c30000; /* rgb(195,0,0)*/
+  --secondary:#008c13;
+  --secondaryLight: #4fbd46;
+  --secondaryDark:#005d00;
+}

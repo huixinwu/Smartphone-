@@ -2,493 +2,265 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="This OER material is intended for use as the first level of web app development. It introduces the use and features of smartphones in modern life and how to create working applications. Students will create apps using existing modules and building blocks. No prior programming knowledge is necessary. After this initial experience, basics of the HTML, CSS, and JavaScript programming language will be introduced along with a minimum of XML programming to introduce the student to the needs of more advanced apps. Software development kits (SDK), along with the development environment will also be covered. In addition, students will have the opportunity to distribute apps into the Marketplace." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/default.css">
-    <title>Creating Smartphone Apps</title>
+    <title>Creating Smartphone Apps Technology</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/color.css">
   </head>
   <body>
 
-    <figure>
-      <div class="introImage">
-        <span class="title ani1">Creating</span>
-        <span class="title ani2">Smartphone Apps</span>
-      </div>
-    </figure>
-
-    <!-- navigation tabs -->
-    <nav class="navTab" id="navTab">
+<!-- intro image -->
+<figure>
+  <div class="introImage">
+    <span class="title ani1">Creating</span>
+    <span class="title ani2">Smartphone Apps</span>
+    <p class="introP">"We have to forget what we think we are to be what we really are"... <br><i>Paulo Coelho</i> </p>
+  </div>
+</figure>
+<!-- navigation tabs -->
+<nav class="navTab" id="navTab">
         <a class="nav_tabs activeNavTab" href="#course">Creating Smartphone Apps</a>
         <a class="nav_tabs " href="#chapters">Chapters</a>
-        <a class="nav_tabs " href="#exercises">Class Activity</a>
-        <a class="nav_tabs " href="#labExp">Projects</a>
+        <a class="nav_tabs " href="#activities">Class Activity</a>
+        <a class="nav_tabs " href="#projects">Projects</a>
     </nav>
 <!-- introduction --->
     <section class="txtContainer" id="course">
       <dl>
         <dt><b>PREFACE</b></dt>
         <br>
-        <dd>
-          This OER material is intended for use as the first level of web app development.
-          It introduces the use and features of smartphones in modern life and how to create working applications. Students will create apps using existing modules and building blocks. No prior programming knowledge is necessary. After this initial experience, basics of the HTML, CSS, and JavaScript programming language will be introduced along with a minimum of XML programming to introduce the student to the needs of more advanced apps. Software development kits (SDK), along with the development environment will also be covered. In addition, students will have the opportunity to distribute apps into the Marketplace.
-          <br><br>
-          <b style="color:var(--primaryColor);"><i>Acknowledgements</b></i>
-          <br><br>
-          I want to give my thanks to my mother Wanxia who has taught me to trust in myself, in my abilities, and in my dreams. As my mom says: <i>“always do with the best you can offer!”</i>
-          <br><br>
-          I also want to give thanks to the support of OER in QCC that helped me organize the necessary documentation for the publication of this manual.
-          <br><br>
-          <i>Huixin Wu</i></dd>
-          <br><br>
-          <dt><b>CURRICULAR OBJECTIVES ADDRESSES BY THIS COURSE</b></dt>
-          <br>
-          <dd>At the end of the course, student shall be able to:
-          <br><br>
-          <ul>
-            <li>Design and use computer applications to produce Smart Phone Applications.</li>
-            <li>Produce effective written documents including lab reports and term papers.</li>
-            <li>Students will focus on smart phone application development.</li>
-            <li>Students integrate knowledge and skills to develop smartphone apps.</li>
-            <li>Students display ingenuity and initiative to resolve difficulties while working on individual or team project.</li>
-            <li>Students are able to explore connections between multiple experiences and sources of information, clarify problems and generate viable solutions.</li>
-            <li>Students are able to make informed decisions in their own work and approach learning new skills and topics without prompt or delegation.</li>
-            <li>Students build the capacity to understand and appreciate other’s perspective in order to anticipate the needs of the project, customers and/or team.</li>
-          </ul>
-        </dd>
-      </dl>
-    </section>
-
-    <!-- topics -->
-    <section class="topics" id='chapters'>
-      <h2 class="subtitle">CHAPTERS</h2>
-	     <br><br>
-      <div style="padding-left:1em;">
-	       <h3> Installation</h3>
-	        <p>Cordova Installation - Material prepared by Richard Victolo <br><br>
-  		      <a href="installation.pdf" download target="_blank" class='download'>Download - Complete Installation</a>
-        		<br>
-  		      <dl>
-        			<dt><b>Software Installation </b></dt>
-        			<dd><a href="https://developer.android.com/studio" target="_black"> Instruction to download android Studio </a>
-        				<br><a href="https://git-scm.com/" target="_black"> Instruction to download android Studio </a></li>
-        				<br><a href="https://gradle.org/install/" target="_black"> Instruction to download gradle </a>
-        				<br><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_black"> Instruction to download Java Development Kit, JDK</a>
-        				<br><a href="https://nodejs.org/en/" target="_black"> Instruction to download Node.js </a>
-      	    		</dd>
-	  	        </dl>
-	           </p>
-           </div>
-      <br><br><hr>
-
-      <!-- Chapter 1: introduction -->
-      <button class="collapsible">1. Introduction to web app</button>
-      <div class="content">
-          <p>Student will learn how to use an open-source, Apache Cordova and Android Studion, as a tool for cross-platform to create mobile apps.
-            <br><br>
-            Introduction to HTML coding and how to work with text in HTML
-          </p>
-          <br><br>
-          <a href="chapters/chapter1_HTML_cordova.pdf" target="_blank" class='download'>Download - Web App and Introduction to basic HTML tags</a>
-          <br><br><hr>
-        </div>
-
-        <!-- Chapter 2: Basic HTML -->
-        <button class="collapsible">2. Using basic HTML in a web app</button>
-        <div class="content">
-            <p><b>Introduction</b><br><br>In the second week, students will learn how to create links and navigations bars in a web app.
-              <br><br>
-              <a href="chapters/chapter2_TextHTML.pdf" target="_blank" class='download'>Download - Text, list, tables, images, and navigation tabs in HTML</a>
-            </p><br><br><hr>
-          </div>
-
-          <!-- Chapter 3: Intro to CSS -->
-          <button class="collapsible">3. Introduction to CSS to style web apps</button>
-          <div class="content">
-            <p>Students will learn to use internal and external CSS file in a web app; how to work with text, colors, images, blocks using and tags, and links in CSS.</p>
-            <br><br>
-            <a href="chapters/chapter3_introCSS.pdf" target="_blank" class='download'>Download - Introduction to CSS to style web apps</a>
-            <br><br><hr>
-          </div>
-
-        <!-- Chapter 4: Navigation tab, social media, icons in CSS -->
-        <button class="collapsible">4. Navigation Tabs, Social Medio icons, symbols, and icons in CSS </button>
-        <div class="content">
-          <p>Student will create different type of navigation tabs for a web app, and how to use icons and symbols using CSS.
-            <br><br>
-            <a href="chapters/chapter4_layout_navbar_socialMedia.pdf" target="_blank" class='download'>Download - Layout, Navigation Bars, and Social Media Icons</a>
-          </p><br><br><hr>
-        </div>
-
-        <!-- Chapter 5: Image manipulation -->
-        <button class="collapsible">5. Image Manipulation in web app  </button>
-        <div class="content">
-          <p>Student will learn how to apply different filter, color gradient, and border to images in a web app.
-            <br><br>
-            <a href="chapters/chapter5_color_Img_CSS.pdf"  target="_blank" class='download'>Download - Colors and Image Manipulation using CSS</a>
-            </p>
-            <br><br><hr>
-        </div>
-
-        <!-- Chapter 6: Basic CSS -->
-        <button class="collapsible">6. Basic CSS animation</button>
-        <div class="content">
-            <p>Student will learn how to create basic animation for a web app using keyframe and transformation in CSS.
-              </p><br><br>
-              <a href="chapters/chapter6_CSS_Animation.pdf" target="_blank" class='download'>Download -  CSS animation</a>
-              <br><br><hr>
-          </div>
-
-       <!-- Chapter 7: Modal Window -->
-		   <button class="collapsible">7. Modal windows in web app </button>
-        <div class="content">
-            <p>Student will learn a new CSS technique, which is :target selector, to create  modal windows.   </p><br><br>
-              <a href="chapters/chapter7_modal_WebApp.pdf" target="_blank" class='download'>Download -  Modal windows in web app</a>
-              <br><br><hr>
-          </div>
-
-        <!-- Chapter 8: Slideshow -->
-        <button class="collapsible">8. Slideshow in a web app</button>
-        <div class="content">
-          <p>Student will learn how to create simple slideshow using keyframe, opacity, and transformation in CSS.</p>
-          <a href="chapters/chapter8_slideshowWebApp.pdf" target="_blank" class='download'>Download -  Slideshow in a web app</a>
-			     <br><br><hr>
-        </div>
-
-        <!-- Chapter 9: Flip cards -->
-        <button class="collapsible">9. Flip Cards</button>
-        <div class="content">
-        	<p>Student will learn how to manipulate CSS position and rotate to create flip card effect. </p>
-        	<a href="chapters/chapter10_flipCard.pdf"  target="_blank" class='download'>Download -  Flip cards in a web app</a>
-		      </p>
-          <br><br><hr>
-        </div>
-
-        <!-- Chapter 10: Collapsible and Accordions -->
-        <button class="collapsible">9. Collapsible and Accordions in web app </button>
-        <div class="content">
-          <p>Student will learn how to use basic CSS properties such as display to create simple collapsible elements. </p>
-          <a href="chapters/Chapter9_collapsibleWebApp.pdf"  target="_blank" class='download'>Download -  Collapsible in web app</a>
-			    <br><br><hr>
-          </div>
-
-        <!-- Chapter 11: CSS Variables -->
-        <button class="collapsible">11. CSS variables and web app primary and secondary color selection  </button>
-        <div class="content">
-          <p>Student will learn the meaning of variables, how to select the primary and secondary color for a web app, and how to apply CSS variables to set primary and secondary color.</p>
-          <a href="chapters/chapter11_var.pdf"  target="_blank" class='download'>Download - CSS variables and web app primary and secondary color selection </a>
-		      </p>
-          <br><br><hr>
-        </div>
-
-</section> <!-- end of chapters -->
-
-<!-- CLASS ACTIVITY -->
-<section class="exercises" id="exercises">
-  <h2 class="subtitle">CLASS ACTIVITY</h2>
-
-  <!-- Class Activity 1 -->
-  <button class="collapsible colorExercise">Class Activity 1: basic HTML </button>
-  <div class="content">
-    <p><b>Class Activity 1:</b> <br>
-      Use the basic HTML elements learned in Chapter 1 and create an app that introduce yourself: name, major, and mention some academic, personal, and professional goals.
-      Also, mention some activities that you like to do in your free time.
-      <br><br>
-      The require HTML elements for activity 1 are: paragraph, headings (use at least two of them), break line, horizontal ruler, italic or emphasis, and bold.
-      <br><br>
-      A template of Class Activity 1 is shown below.
-    </p>
-    <figure class="activity5_figure">
-      <img src="images/activity1.PNG">
-    </figure>
-  </div>
-
-  <!-- Class Activity 2 -->
-  <button class="collapsible colorExercise">Class Activity 2: links and nav bar in HTML </button>
-  <div class="content">
-    <p><b>Class Activity 2: </b><br>
-	  Activity 2 refers to building an app about the city of New York. You will apply your basic knowledge of aligning texts, adjusting images, and creating hyperlinks in images and texts. You will also use unordered list for hyperlinks (internally and externally) of the app</p>
-    <br>The information and images about New York City can be retrieved from the internet<br><hr><br>
-	   <!-- VIDEO -->
-	  <div class="activityVideo">
-	    <video controls>
-		      <source src="projects/Activity2_Basic_HTML.mp4" type="video/mp4">
-	    </video>
-	  </div>
-  </div>
-
-  <!-- Class Activity 3-->
-  <button class="collapsible colorExercise">Class Activity 3: intro to CSS </button>
-  <div class="content">
-    <p><b>Class Activity 3:</b><br>
-  	In this activity, the student will create an app about an animal. The app will have a title, an image of the animal, and a brief introduction about the animal.
-	  Those elements in the app structure will have basic styling such as background-color, font-family, font color, text-shadow, border, padding, margin, and font-size.
-		</p>
-    <br><hr><br>
-	   <!-- VIDEO -->
-	   <div class="activityVideo">
-	    <video controls>
-		      <source src="projects/Activity3_basic_CSS.mp4" type="video/mp4">
-	    </video>
-	  </div>
-  </div>
-
-  <!-- Class Activity 4-->
-  <button class="collapsible colorExercise">Class Activity 4: Navigation tabs, icons, and symbols in CSS</button>
-  <div class="content">
-    <p><b>Class Activity 4:</b><br> After completing Chapter 4, students will create an app with three different cities. Each city should have a title, images of the city, a paragraph about the city, and a link to the city's website. The app should also have a navigation tab, with links to the three cities, fixed to the bottom of the app's screen. The requirements are:
-      <ul>
-        <li><b>City Title: </b> Title of each city should have different format such as font family, backgroud color, font color, and box and/or text shadow. The text in the title should be centered.</li>
-        <li><b>City Images: </b>The first city should have four images with different image formats. The second city should have one image with two different image formats. The third image should have two images with two different image formats. </li>
-        <li><b>City Paragraph: </b>All three cities should have an introduction paragraph to the city. The format of the three paragraphs should be the same: with justify text alignment, font color, and padding.</li>
-        <li><b>City External Link: </b>All three cities should have an external link to the city's website. All three links should have the same styling: backgroud color, font color, and padding.</li>
-        <li><b>Navigation Tab: </b> The navigation tab should be linked internally to the three cities. The navigation tab is fixed to the bottom of the app's screen and has the following styling: backgroud color, font color, and padding.</li>
-        <li>Add a footer at the end of the app.</li>
-      </ul>
-      <br>
-      Check out the activity video below to complete activity 4.
-    </p>
-    <br><br>
-    <!-- VIDEO -->
-    <div class="activityVideo">
-      <video controls>
-    		<source src="projects/activity4.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-
-  <!-- Class Activity 5 -->
-  <button class="collapsible colorExercise">Class Activity 5: Image Manipulation </button>
-  <div class="content">
-    <p><b>Class Activity 5: </b><br>
-		 Create three activities with different image properties as the following:
-		<ul>
-			<li>Image 1 will have an invert image with text on the bottom of it. The text should have opacity effect.</li>
-			<li>Image 2 will have a blurred image with text in the middle of it. The text should have opacity and box-shadow effect.</li>
-			<li>Image 3 will have linear-gradient with texts in different location. </li>
-		 </ul>
-		The images should look as the following:
-		<figure class="activity5_figure">
-			<img src="images/activity5_img1.jpg">
-			<img src="images/activity5_img2.jpg">
-			<img src="images/activity5_img3.jpg">
-		</figure>
-		Download and complete Class Activity 5: Image Manipulation</p><br><br>
-    <a href="projects/activity5_image.pdf" target="_blank" class='download'>Download - Class Activity 5: Image Manipulation</a>
-    <br><br><hr><br>
-  </div>
-
-  <!-- Class Activity 6-->
-  <button class="collapsible colorExercise">Class Activity 6: Basic animation in a web app </button>
-  <div class="content">
-    <p><b>Class Activity 6:</b><br>
-	     Activity 6 evaluates students’ knowledge in creating simply animation for smartphone apps using CSS @keyframe.
-  		   <br>The theme on activity is Sweet Dreams. In this activity, students will create animation to three elements: twinkle stars (at least 6 stars), a flying witch in a broom, and a flowing message.
-		 </p>
-     <br><br>
-		<!-- VIDEO -->
-		<div class="activityVideo">
-		   <video controls>
-			    <source src="projects/Activity6_CSS_animation.mp4" type="video/mp4">
-		   </video>
-		</div>
-		<br><hr><br>
-		<a href="projects/activity6_animation.pdf"  target="_blank" class='download'>Download - Class Activity 6: Basic animation in web app </a>
-    <br><br><br>
-	</div>
-
-  <!-- Class Activity 7 -->
-  <button class="collapsible colorExercise">Class Activity 7: Modal Windows </button>
-  <div class="content">
-    <p><b>Class Activity 7: </b><br>
-  		Create a webpage with two modal windows. For example, we can create a webpage to sale two hand soaps. The main page looks as the following:
-  		<figure class="activity5_figure">
-  			<img src="images/activity7_img1.jpg">
-  		</figure>
-  		<br><br>
-  		When click on left item ADD TO BAG tab, the following modal window will appear:
-  		<figure class="activity5_figure">
-  			<img src="images/activity7_img2.jpg">
-  			<img src="images/activity7_img3.jpg">
-  		</figure>
-		  Download and complete Class Activity 7: Modal Window</p>
-      <br><br>
-      <a href="projects/activity7_modal.pdf" target="_blank" class='download'>Download - Class Activity 7: Modal Windows</a>
-      <br><br><hr><br>
-    </div>
-
-    <!-- Class Activity 8 -->
-    <button class="collapsible colorExercise">Class Activity 8: Slideshow in a web app </button>
-    <div class="content">
-      <p><b>Class Activity 8:</b><br> Students are required to create two slideshows: one with five images and the other one with three message. The requirements are:
+        <dd>This OER material is intended for use as the first level of web app development. It introduces the use and features of smartphones in modern life and how to create working applications. Students will create apps using existing modules and building blocks. No prior programming knowledge is necessary. After this initial experience, basics of the HTML, CSS, and JavaScript programming language will be introduced along with a minimum of XML programming to introduce the student to the needs of more advanced apps. Software development kits (SDK), along with the development environment will also be covered. In addition, students will have the opportunity to distribute apps into the Marketplace.
+        <br><br>
+        <b><em>Acknowledgements</em></b>
+        <br><br>
+        I want to give my thanks to my mother Wanxia who has taught me to trust in myself, in my abilities, and in my dreams. As my mom says: <i>“always do with the best you can offer!”</i>
+        <br><br>
+        I also want to give thanks to the support of OER in QCC that helped me organize the necessary documentation for the publication of this manual.
+        <br><br>
+        <i>Huixin Wu</i></dd>
+        <br><br>
+        <dt><b>CURRICULAR OBJECTIVES ADDRESSES BY THIS COURSE</b></dt>
+        <br>
+        <dd>At the end of the course, student shall be able to:
+        <br><br>
         <ul>
-          <li><b>Slideshow with five images: </b> The slideshow should have five images, time delay between images, and backward effect. Also, add a box shadow to the slideshod container.</li>
-          <li><b>Message Slideshow: </b>The message slideshow should have three different messages, with delay between messages, and reverse effect when it reaches to the last slide. Also, add different font color, font size, and backgroud color to each slide message. </li>
-          <li>Add a footer to your app</li>
+          <li>Design and use computer applications to produce Smart Phone Applications.</li>
+          <li>Produce effective written documents including lab reports and term papers.</li>
+          <li>Students will focus on smartphone application development.</li>
+          <li>Students integrate knowledge and skills to develop smartphone apps.</li>
+          <li>Students display ingenuity and initiative to resolve difficulties while working on individual or team project.</li>
+          <li>Students are able to explore connections between multiple experiences and sources of information, clarify problems and generate viable solutions.</li>
+          <li>Students are able to make informed decisions in their own work and approach learning new skills and topics without prompt or delegation.</li>
+          <li>Students build the capacity to understand and appreciate other’s perspective in order to anticipate the needs of the project, customers and/or team.</li>
         </ul>
-        Check out the activity video below to complete activity 8.
-       </p>
-      <br><br>
-      <!-- VIDEO -->
-      <div class="activityVideo">
-          <video controls>
-        <source src="projects/slideshow_activity.mp4" type="video/mp4">
-          </video>
-      </div>
+      </dd>
+    </dl>
+  </section>
+<!-- chapters -->
+    <h2 class="subtitle" id='chapters'>CHAPTERS</h2>
+    <section class="chapters" >
+      <!-- chapter 1: web technology -->
+      <section class="card">
+        <div class="cardImg">
+          <img src="images/android_icon.png" alt="icon of a computer" title="Web Technology Chapter">
+        </div>
+        <div class="cardBody">
+          <h3>Installation: set up a web-app development environment</h3>
+          Student prepares the development environment to start creating the web-app view. Student will learn how to download and use open-source softwares, Apache Cordova and Android Studio, as cross-platform tools to create mobile apps.
+          <a href="chapters/installation.pdf" download target="_blank">Download Installation (pdf file). Material prepared by Richard Victolo</a>
+        </div>
+        <div class="cardFooter">
+          <button id="openModalChapter1" class="btnOpenModal">Learning Outcomes</button>
+        </div>
+      </section>
+      <!-- chapter 2: HTML -->
+      <section class="card">
+        <div class="cardImg">
+          <img src="images/webApp.png" alt="icon of a HTML5" title="HTML Chapter">
+        </div>
+        <div class="cardBody">
+          <h3>Creating mobile app layout using HTML</h3>
+          In this module, students will learn how to create mobile app view structure using HTML.
+          <ol>
+            <a href="chapters/chapter1_HTML_cordova.pdf" target="_blank"><li>Mobile app text using HTML(pdf file)</li></a>
+            <a href="chapters/chapter2_TextHTML.pdf" target="_blank"><li>Mobile app list, images, and links using HTML basics(pdf file)</li> </a>
+          </ol>
+        </div>
+        <div class="cardFooter">
+          <button id="openModalChapter2" class="btnOpenModal">Learning Outcomes</button>
+        </div>
+      </section>
+      <!-- chapter 3: CSS -->
+      <section class="card">
+        <div class="cardImg">
+          <img src="images/webApp2.png" alt="icon of a CSS3" title="CCS3 Essential Chapter">
+        </div>
+        <div class="cardBody">
+          <h3>Styling Mobile App View Using CCS3</h3>
+          In module 3, students will learn how to style mobile app view using CSS3
+          <ol start="3">
+            <a href="chapters/chapter3_introCSS.pdf" target="_blank" class='download'><li>Styling text, colors, images, and links (pdf file)</li></a>
+            <a href="chapters/chapter4_layout_navbar_socialMedia.pdf" target="_blank" class='download'><li>Nagivation tabs, social media icond, and symbols and icons (pdf file)</li> </a>
+            <a href="chapters/chapter5_primarySecondaryColors.pdf"  target="_blank" class='download'><li>UX in a mobile app, CSS variables (pdf file)</li> </a>
+            <a href="chapters/chapter5_color_Img_CSS.pdf"  target="_blank" class='download'><li>Image manipulation in mobile app view (pdf file)</li> </a>
+            <a href="chapters/chapter6_CSS_Animation.pdf" target="_blank" class='download'><li>Animation (pdf file)</li> </a>
+            <a href="chapters/chapter7_modal_WebApp.pdf" target="_blank" class='download'><li>Modal windows (pdf file)</li> </a>
+            <a href="chapters/chapter8_slideshowWebApp.pdf" target="_blank" class='download'><li>Slideshow (pdf file)</li> </a>
+            <a href="chapters/chapter10_flipCard.pdf"  target="_blank" class='download'><li>Flip cards (pdf file)</li> </a>
+            <a href="#"><li>Collapsible and accordions (pdf file)</li> </a>
+          </ol>
+        </div>
+        <div class="cardFooter">
+          <button id="openModalChapter3" class="btnOpenModal">Learning Outcomes</button>
+        </div>
+      </section>
+    </section> <!-- end of chapter container -->
+<!-- CLASS ACTIVITIES -->
+<h2 class="subtitle" id='activities'>CLASS ACTIVITIES</h2>
+<section class="activity" >
+  <!-- HTML activities -->
+  <!-- class activity 1-->
+  <section class="cardActivity">
+    <div class="cardImg activityImg">
+      <img src="images/activity1.jpg" alt="icon of class activity 1" title="Class activity 1: basic HTML" >
+      Class Activity 1: basic HTML
     </div>
-
-    <!-- Class Activity 9-->
-    <button class="collapsible colorExercise">Class Activity 9: Applying flip cards in web app</button>
-    <div class="content">
-      <p><b>Class Activity 9</b><br>
-			  Students should be able to create 3-row, 2-column flip cards with six different animals. The front  format of the cards will be as shown in this template. The requirements are:
-        <ul>
-          <li><b>Front face: </b>The front of the card should have at least 1 box effect </li>
-          <li><b>Back face: </b>Each back of the card should have different background color, font color, and font size. Also, add padding to the text and center the text. </li>
-        </ul>
-      Check out the activity video below to complete activity 9.
-      </p>
-      <br><br>
-      <!-- VIDEO -->
-  		<div class="activityVideo">
-  		    <video controls>
-  			<source src="projects/flipCards.mp4" type="video/mp4">
-  		    </video>
-  		</div>
-  		<br><hr><br>
-  </div>
-
-  <!-- Class Activity 10 -->
-  <button class="collapsible colorExercise">Class Activity 10: Collapsible and CSS variables in a web app </button>
-  <div class="content">
-    <p><b>Class Activity 10:</b><br> 
-	Students should create a navigation tab using the same CSS technique as to create collapsible. The navigation tab should be sticked to the top of the screen and have three links: two external links and one internal link.
-	<br>
-	Check out the activity video below to complete activity 10.
-	</p>
-    <br><br>
-      <!-- VIDEO -->
-  		<div class="activityVideo">
-  		    <video controls>
-  			<source src="projects/activity10.mp4" type="video/mp4">
-  		    </video>
-  		</div>
-  		<br><hr><br>
-  </div>
-
-</section><!--end of exercises -->
-
+    <div class="cardFooter">
+      <a class="openActivity" href="activity1.html">Open class activity 1 description</a>
+    </div>
+  </section>
+  <!-- class activity 2-->
+  <section class="cardActivity">
+    <div class="cardImg activityImg">
+      <img src="images/activity2.jpg" alt="icon of class activity 2" title="Class activity 2: links and navigation tabs" >
+      Class Activity 2: links and navigation tabs
+    </div>
+    <div class="cardFooter">
+      <a class="openActivity" href="activity2.html">Open class activity 2 description</a>
+    </div>
+  </section>
+  <!-- HTML and CSS -->
+  <!-- class activity 3-->
+  <section class="cardActivity">
+    <div class="cardImg activityImg">
+      <img src="images/activity3.jpg" alt="icon of class activity 3" title="Class activity 3: CSS essentials" >
+      Class Activity 3: CSS essentials
+    </div>
+    <div class="cardFooter">
+      <a class="openActivity" href="activity3.html">Open class activity 3 description</a>
+    </div>
+  </section>
+  <!-- class activity 4-->
+  <section class="cardActivity">
+    <div class="cardImg activityImg">
+      <img src="images/activity4.jpg" alt="icon of class activity 4" title="Class activity 4: navigation tabs, icons, and symbols." >
+      Class Activity 4: navigation tabs, icons, and symbols
+    </div>
+    <div class="cardFooter">
+      <a class="openActivity" href="activity4.html">Open class activity 4 description</a>
+    </div>
+  </section>
+  <!-- class activity 5-->
+  <section class="cardActivity">
+    <div class="cardImg activityImg">
+      <img src="images/activity5_img1.jpg" alt="icon of class activity 5" title="Class activity 5: image manipulation" >
+      Class Activity 5: image manipulation
+    </div>
+    <div class="cardFooter">
+      <a class="openActivity" href="activity5.html">Open class activity 5 description</a>
+    </div>
+  </section>
+  <!-- class activity 6-->
+  <section class="cardActivity">
+    <div class="cardImg activityImg">
+      <img src="images/activity6.jpg" alt="icon of class activity 6" title="Class activity 6: mobile app animation" >
+      Class Activity 6: mobile app animation
+    </div>
+    <div class="cardFooter">
+      <a class="openActivity" href="activity6.html">Open class activity 6 description</a>
+    </div>
+  </section>
+  <!-- class activity 7-->
+  <section class="cardActivity">
+    <div class="cardImg activityImg">
+      <img src="images/activity7_img1.jpg" alt="icon of class activity 7" title="Class activity 7: modal window" >
+      Class Activity 7: modal window
+    </div>
+    <div class="cardFooter">
+      <a class="openActivity" href="activity7.html">Open class activity 7 description</a>
+    </div>
+  </section>
+  <!-- class activity 8-->
+  <section class="cardActivity">
+    <div class="cardImg activityImg">
+      <img src="images/activity8.jpg" alt="icon of class activity 8" title="Class activity 8: mobile app slideshow" >
+      Class Activity 8: mobile app slideshow
+    </div>
+    <div class="cardFooter">
+      <a class="openActivity" href="activity8.html">Open class activity 8 description</a>
+    </div>
+  </section>
+  <!-- class activity 9-->
+  <section class="cardActivity">
+    <div class="cardImg activityImg">
+      <img src="images/activity9.jpg" alt="icon of class activity 9" title="Class activity 9: mobile app flip cards" >
+      Class Activity 9: mobile flip cards
+    </div>
+    <div class="cardFooter">
+      <a class="openActivity" href="activity9.html">Open class activity 9 description</a>
+    </div>
+  </section>
+  <!-- class activity 10-->
+  <section class="cardActivity">
+    <div class="cardImg activityImg">
+      <img src="images/activity10.jpg" alt="icon of class activity 10" title="Class activity 10: mobile app collapsible and accordions" >
+      Class Activity 10: mobile app collapsible and accordions
+    </div>
+    <div class="cardFooter">
+      <a class="openActivity" href="activity10.html">Open class activity 10 description</a>
+    </div>
+  </section>
+</section>
 <!-- PROJECTS -->
-<section class="labExp" id="labExp">
-  <h2 class="subtitleProject">PROJECTS</h2>
-
-  <!-- Project 1 -->
-  <button class="collapsible colorLab">Project 1 - Informative Web App using HTML</button>
-  <div class="content">
-    <p><b>Description</b><br><br>
-    	Project 1 consists in creating an informative app. The information of the app is about a place (city, country, or state) where you want to inform people about it. In your web app, you should present four informations about the place such as:
-    	<ol>
-    			<li>The location of the place and why it is a famous place. </li>
-    			<li>Activities to do in that place. </li>
-    			<li>Important things or locations of that place. </li>
-    			<li>Show photos of that place. </li>
-    	</ol>
-      <br>
-    	Remember that you are creating a one page web app using the HTML skills learned in Week/Day 1, 2, 3, and 4 of class. The HMTL skills that must be in your websites are:
-    	<ul>
-    			<li>Manipulation of basic HTML tags: paragraph, headings, bold, italic, line breaks, horizontal rules, strikethrough, abbreviations. </li>
-    			<li>Create ordered or unordered list and definition list. </li>
-    			<li>Use and manipulate images and logos using <i>figure</i> and <i>figcaption</i>, and some images’ attributes such as title, alt, width, height, and align. </li>
-    			<li>Create links to other sites and how to open links in a new window; link to an email address; links to a specific part of the same page; links from an image; and links a webpage with the same site. </li>
-    			<li>Create navigation hyperlinks using unordered list and <i>nav</i> tag. </li>
-    		</ul>
-		 <br>
-	  <!-- VIDEO -->
-		<div class="activityVideo">
-		    <video controls>
-			<source src="projects/project1_dreamingPlaces.mp4" type="video/mp4">
-		    </video>
-		</div>
-    <br><br>
-    <a href="projects/project1_instructions.pdf" target="_blank" class='download'>Download Project 1 Instructions</a></p>
-		<br><br>
-  </div>
-
-  <!-- Project 2 -->
-  <button class="collapsible colorLab">Project 2 - Sales Web App</button>
-  <div class="content">
-    <p><b>Introduction</b><br><br>
-       Project 2 consists of creating a sales webpage. The purpose of project 2 is to use the knowledge of colors, image manipulation, animation, and modal window to create a simple sales page.
-     </p> <br>
-
-     <!-- VIDEO -->
-     <div class="activityVideo">
-       <video controls>
-         <source src="projects/project2_salesApp.mp4" type="video/mp4">
-       </video>
-      </div>
-      <br>
-      <a href="projects/Instruction_Grading_Project2.pdf" download target="_blank" class='download'>Download Project 2 Instructions</a></p>
-		  <br><br><br>
-      <!-- BEST PROJECTS -->
-      <div class="winners_projects">
-        <div class="title_winners_project"><img src="images/Award.png" alt="Award Image">Students' Work - Best Project 2</div>
-        <hr>
-        <div class="project_winners">
-          <div class="winner">
-            <!-- VIDEO -->
-            <video controls>
-              <source src="projects/kenny_project2.mp4" type="video/mp4">
-            </video>
-            <br>
-            <p>Kenny Wang @ Spring 2020</p>
-           <br><hr>
-         </div>
+  <h2 class="subtitle" id='projects'>PROJECTS</h2>
+    <section class="project" >
+      <!-- project 1: informative web app -->
+      <section class="cardProject">
+        <div class="cardImg projectImg">
+          <img src="images/project1.jpg" alt="icon of project 1" title="Project 1: informative mobile web app" >
+          <h3>Project 1: informative mobile web app</h3>
+          Project 1 consists in creating an informative app. The information of the app is about a place (city, country, or state) where you want to inform people about it.
         </div>
-      </div>
-    <!-- END OF BEST PROJECTS -->
-  </div>
-
-  <!-- Project 3 -->
-  <button class="collapsible colorLab">Project 3 - Children's Apps</button>
-  <div class="content">
-     <p><b>Description</b><br><br>
-	     Project 3 will be to create an app for children between 3 and 6 years old. The app will focus on teaching children users to develop their speech through graphics. For example, you can create an app where children can learn numbers, colors, simple words, places, animals, etc., in English and/or another language. The application must have the following parameters:
-      	<ul>
-      		<li>The child has the opportunity to choose between two topics, for example, one to learn numbers and another to learn colors, or one to learn a new language and different animals.</li>
-      		<li>When the child chooses the topic, the topic has to have 10 selections, for example, if the child chose to learn number, the child can see a list of numbers from 1 to 10, and when the child clicks on a number, it will show a photo of each number, how to pronounce it, and how the numbers are written in English and/or another language.</li>
-      	</ul>
-     </p> <br>
-     <a href="projects/Project3_childrenApp.pdf" download target="_blank" class='download'>Download Project 3 Grading Policy</a></p><br><br>
-     <!-- BEST PROJECTS -->
-    <div class="winners_projects">
-      <div class="title_winners_project"><img src="images/Award.png" alt="Award Image">Students' Work - Best Project 3</div>
-      <hr>
-      <div class="project_winners">
-        <div class="winner">
-          <!-- VIDEO -->
-          <video controls>
-            <source src="projects/ornima.mp4" type="video/mp4">
-          </video>
-           <br>
-           <p>Ornima Tyeshi @ Spring 2020</p>
-           <br><hr>
-         </div>
-
-         <div class="winner">
-           <!-- VIDEO -->
-           <video controls>
-             <source src="projects/aziz.mp4" type="video/mp4">
-           </video>
-            <br>
-            <p>Azaz Mazhar @ Spring 2020</p>
-            <br><hr>
+        <div class="cardFooter">
+          <a class="openActivity" href="project1.html">Open project 1 description</a>
         </div>
-
-    </div>
-  </div> <!-- end of best projects -->
-</div>
-</section><!-- end of projects -->
-
-<!-- CREIDTS -->
+      </section>
+      <!-- project 2: sales webapp-->
+      <section class="cardProject">
+        <div class="cardImg projectImg">
+          <img src="images/project2.jpg" alt="icon of project 2" title="project 2: sales mobile web app">
+          <h3>Project 2: sales mobile web app</h3>
+          Project 2 consists of creating a sales webpage. The purpose of project 2 is to use the knowledge of colors, image manipulation, animation, and modal window to create a simple sales page.
+        </div>
+        <div class="cardFooter">
+          <a class="openActivity" href="project2.html">Open project 2 description</a>
+        </div>
+      </section>
+      <!-- project 3: children webapp-->
+      <section class="cardProject">
+        <div class="cardImg projectImg">
+          <img src="images/project3.jpg" alt="icon of project 3" title="project 3: children web app">
+          <h3>Project 3: children web app</h3>
+          Project 3 will be to create an app for children between 3 and 6 years old. The app will focus on teaching children users to develop their speech through graphics.
+        </div>
+        <div class="cardFooter">
+          <a class="openActivity" href="project3.html">Open project 3 description</a>
+        </div>
+      </section>
+    </section> <!-- end of project container -->
+<!-- FOOTER -->
+<!-- credits -->
 <section class="credits" id="credits">
   This Web Technology OER material, by Huixin Wu, is copyrighted under the terms of a Creative Commons license:
   <br><br>
@@ -497,7 +269,10 @@
     <i>This work is freely redistributable for non-commercial use, share-alike with attribution</i>
   </div>
   <br><br>
-  <p><em>Important note: </em>The materials used in this manual have the author's rights and are for educational use only. Some informative material is compiled from www.lynda.com, www.wikipedia.org, www.w3schools.com, www.khanacademy.com</p>
+  <p><em>Important note: </em>The materials used in this manual have the author's rights and are for educational use only. Some informative material is compiled from <a href="https://www.lynda.com/" target="_blank">www.lynda.com</a>,<a href="https://www.wikipedia.org/" target="_blank">www.wikipedia.org</a>,<a href="https://w3schools.com/" target="_blank">www.w3schools.com</a>, <a href="https://www.khanacademy.com/" target="_blank">www.khanacademy.com</a>.
+  <br>
+  Icons are downloaded from <a href="https://www.iconfinder.com/" target="_blank">www.iconfinder.com </a>
+  </p>
   <hr> <br>
   <b>About the Authors:</b>
   Professor Wu is the course coordinator of the Digital Computer Theory course with the department of Engineering Technology at QCC. As the course coordinator, professor Wu updates the course outline and also creates homework and exercises to complement the learning materials for the course. She also has participated in grants and has experiences in creating new teaching terminologies for engineering technology students. She was the CO-PI of the National Science Foundation (NSF) STEM grant titled “A video Lecture Library and an Interactive Systems for Computer Programming Concepts”. In addition from her teaching schedule, she is the lead of the curriculum development of TechWorks grant, and a faculty mentor of the students Undergraduate Research Project program at QCC. Professor Wu has more than ten years of experience teaching  both the Digital Computer Theory course and laboratory in QCC and NYCCT.
@@ -507,16 +282,32 @@
   <h3><a href="http://www.qcc.cuny.edu/engtech/ET_Faculty/Wu.html" target="_blank">Professor Huixin Wu</a></h3>
   <b>Lecturer </b> <br>
   <i>Engineering Technology Department </i> <br>
-  <a href="http://www.qcc.cuny.edu/" target="_blank"> Queensborough Community College</a> <br>
-  <a href="https://www.google.com/maps/search/qcc/@40.7561779,-73.7599375,17z/data=!3m1!4b1" target="_blank">222-05 56th Avenue, Bayside, NY 11364</a>  <br>
   <a href="mailto:hwu@qcc.cuny.edu">hwu@qcc.cuny.edu</a>
-  <br> <br> <hr>
-  <i><h6>Web Technology: material prepared by professor Huixin Wu @ 2019</h6></i>
+  <br>
+  <a href="http://www.qcc.cuny.edu/" target="_blank"> Queensborough Community College</a> <br>
+  <a href="https://goo.gl/maps/Ch2CgZUprveE8wcx7" target="_blank">222-05 56th Avenue, Bayside, NY 11364</a>  <br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12089.201636232898!2d-73.757401!3d40.755417!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49ff66ba1d2376bd!2sQueensborough%20Community%20College!5e0!3m2!1sen!2sus!4v1653939978288!5m2!1sen!2sus" style="border:0; width:30%;margin-top:1em;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <br>
+ <hr>
+  <i><h6>Web Technology: material prepared by professor Huixin Wu @ 2022</h6></i>
 </section><!-- end of credits -->
-
-    <script type="text/javascript" src="js/default.js">
-
-    </script>
+<!-- COLLAPSIBLE NAVIGATION TABS -->
+<div class="containerCollapsibleNav">
+  <button type="button" id="collapsible" class="collapsible">
+    <div class="imageCollapsible"><span>&#127969;</span> <br> Home </div> <div class="collapsibleTitle">
+      Creating Smartphone Apps
+    </div>
+  </button>
+  <div class="collapsibleNav">
+    <nav>
+      <a class="nav_tabs activeNavTab" href="#course">Creating Smartphone Apps</a>
+      <a class="nav_tabs " href="#chapters">Chapters</a>
+      <a class="nav_tabs " href="#activities">Class Activity</a>
+      <a class="nav_tabs " href="#projects">Projects</a>
+    </nav>
+  </div>
+</div>
+<script type="text/javascript" src="js/default.js"></script>
 
   </body>
 </html>

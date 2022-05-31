@@ -1,0 +1,125 @@
+.activityTitle{
+  width: 90%;
+  margin: auto;
+  padding: 1em;
+  background-color: var(--primary);
+}
+.activityHome{
+  text-decoration: none;
+}
+.activityHome span img{
+  width: 35px;
+}
+.activityHome span img:hover{
+  opacity: 0.3;
+}
+.activitySubtitle{
+  font-size:2em;
+  margin-left: 5%;
+  color: var(--secondary);
+  padding: 1em;
+}
+h3{
+  color: var(--secondary);
+}
+.activityP{
+  width: 90%;
+  margin: 1em auto;
+  border-bottom: 1px solid var(--primary);
+}
+.navActivity{
+  width: 90%;
+  margin: 1em auto;
+  text-align: center;
+}
+.navActivity a{
+  color: var(--secondary);
+}
+.navActivity a:hover{
+  color: var(--primary);
+}
+.footer{
+  text-align: center;
+  padding-top: 2em;
+  font-size: 0.8em;
+}
+.activityVideo{
+  width: 50%;
+  margin: 1em auto;
+  box-shadow: 2px 2px 5px black;
+}
+.activityVideo video{
+  width: 100%;
+  height: 100%;
+}
+/* --- winners --*/
+.winners_projects{
+  width: 100%;
+  height: auto;
+  margin: 0.5em auto 2em auto;
+}
+.title_winners_project{
+  width: 100%;
+  padding: 0.5em 1em;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+.title_winners_project img{
+  width: 15%;
+  margin-right: 1em;
+  float: left;
+  transform: rotate(-20deg);
+}
+.project_winners{
+  width: 100%;
+  height: 70%;
+  margin-top: 2em;
+}
+.winner{
+  width:30%;
+  margin: auto;
+}
+.winner video{
+  width: 100%;
+}
+.winner p{
+  text-align: center;
+  color: var(--primaryColor);
+  font-weight: 600;
+}
+/*
+------------- SMALL AND TABLET SCREEN ---------------
+*/
+@media only screen and (max-width: 850px) {
+  .activitySubtitle{
+    font-size:1.2em;
+    padding: 0.5em;
+  }
+  .activityHome span img{
+    width: 30px;
+  }
+  .winner{
+    width:60%;
+  }
+  .title_winners_project{
+    font-size: 1.1em;
+  }
+  .navActivity{
+    font-size: 0.8em;
+  }
+}
+/*
+------------- SMALL AND SMARTPHONE SCREEN ---------------
+*/
+@media only screen and (max-width: 500px) {
+  .activitySubtitle{
+    font-size:1.1em;
+  }
+  .navActivity{
+    font-size: 0.6em;
+  }
+  .winner{
+    width:90%;
+  }
+}
