@@ -12,18 +12,19 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary);
+  background: var(--primaryDark);
+  border-radius: 0px 0px 5px 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondaryDark);
+  background: var(--primary);
 }
 /* -- NAV COLLAPSIBLE --*/
 .containerCollapsibleNav{
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 85%;
   opacity: 0.95;
   display: none;
   overflow: hidden;
@@ -164,15 +165,15 @@ dt, dd b{color: var(--primaryDark);}
   width: 90%;
   padding: 3em 0em 0em 1em;
   margin: 0em auto;
-  color: var(--secondaryDark);font-stretch:ultra-expanded; font-weight: 600;}
+  color: var(--primaryDark);font-stretch:ultra-expanded; font-weight: 600;font-size: 2em;}
 .subtitle:nth-of-type(1){
-  background-color: var(--primaryLight);
+  background-color: rgb(240,240,240);
 }
 .chapters{
   width: 90%;
   height: auto;
   margin: 0em 5%;
-  background-color: var(--primaryLight);
+  background-color: rgb(240,240,240);
   padding: 1em 0em;
   display: inline-block;
 }
@@ -212,7 +213,7 @@ dt, dd b{color: var(--primaryDark);}
 }
 /* -- ACTIVITY--*/
 .subtitle:nth-of-type(2){
-    background-color: var(--primary);
+    background-color: rgb(220,220,220);
     margin-top: -0.5em;
 }
 .cardActivity{
@@ -228,7 +229,7 @@ dt, dd b{color: var(--primaryDark);}
   display: inline-block;
 }
 .activity{
-  background-color: var(--primary);
+  background-color: rgb(220,220,220);
 }
 .openActivity{
   background-color: var(--secondary);
@@ -264,7 +265,7 @@ dt, dd b{color: var(--primaryDark);}
 }
 /* -- card project --*/
 .project{
-    background-color: var(--primaryDark);
+    background-color: rgb(200,200,200);
 }
 .cardProject{
   width: 30%;
@@ -282,9 +283,10 @@ dt, dd b{color: var(--primaryDark);}
   color: var(--secondary);
 }
 #projects{
-  background-color: var(--primaryDark);
-  color:var(--secondaryLight);
   margin-top: -0.5em;
+}
+.subtitle:nth-of-type(3){
+    background-color: rgb(200,200,200);
 }
 /* ---MODAL WINDOWS ---*/
 /* open modal window button */
