@@ -24,25 +24,24 @@
 .containerCollapsibleNav{
   position: fixed;
   top: 0;
-  width: 85%;
+  width: 95%;
   opacity: 0.95;
   display: none;
   overflow: hidden;
 }
 .collapsible{
-  width: 99%;
   background-color: var(--secondaryDark);
   height: 5em;
   border: none;
 }
 .imageCollapsible{
-  width: 8%;
+  width: 10%;
   float:left;
   font-weight: 600;
   color: var(--primary);
 }
 .collapsibleTitle{
-  width: 92%;
+  width: 90%;
   float: left;
   font-size: 2em;
   font-family: LCD5x8H;
@@ -58,6 +57,7 @@
 .collapsibleNav{
   height: 10em;
   display: none;
+  width: 90%;
 }
 /*-- TITLE --*/
 .introP{
@@ -371,7 +371,7 @@ dt, dd b{color: var(--primaryDark);}
   width: 90%;
   margin:auto;
   margin-top: -0.5em;
-  background-color: rgb(90,0,0);
+  background-color: rgb(50,50,50);
   padding: 100px 20px 100px 20px;
   color: white;
   height: auto;
@@ -413,9 +413,10 @@ dt, dd b{color: var(--primaryDark);}
 @media only screen and (max-width: 1100px)  {
   .containerCollapsibleNav{
     display: block;
+    width: 100%;
   }
   .nav_tabs{
-    width: 100%;
+    width: 88%;
     text-decoration: none;
     border-bottom: 1px var(--secondary) solid;
   }
@@ -427,10 +428,15 @@ dt, dd b{color: var(--primaryDark);}
     margin-left: 5%;
     margin-top: 50%;
   }
+  .chapters, .activity, .credits, .project, .subtitle{
+    width: 90%;
+    margin-left: 5%;
+  }
   .introImage{
     width: 550px;
     height:auto;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 0em;
     border-radius: 0.5em;
   }
@@ -445,8 +451,8 @@ dt, dd b{color: var(--primaryDark);}
     margin: auto;
   }
   .card,.cardProject{
-    width: 43%;
-    margin: 2% 0% 2% 5%;
+    width: 46%;
+    margin:2%;
   }
   .navTab{
     display: none;
@@ -461,18 +467,14 @@ dt, dd b{color: var(--primaryDark);}
 }
 /*---------- MEDIUM SCREEN ---------*/
 @media only screen and (max-width: 800px) {
-  figure{height: 300px;}
+  figure{height: auto; margin-bottom: 2em;}
   .introImage{
     width: 450px;
-    height: 300px;
   }
-  .card,.cardProject{
-    width: 80%;
-    margin: 2% 0% 5% 10%;
-  }
+  .txtContainer, .chapters, .activity, .project{width: 90%; margin: 2% 5%;}
   .cardActivity{
-    width: 45%;
-    margin: 1% 0% 2% 2.5%;
+    width: 46%;
+    margin:2%;
   }
   .cardImg{
     height: 26em;
@@ -481,42 +483,40 @@ dt, dd b{color: var(--primaryDark);}
     height: auto;
   }
   .card,.cardProject{
-    width: 90%;
-    margin: 2% 0% 5% 5%;
+    width: 70%;
+    margin:2% 15%;
   }
 }
 /*---------- SMALL SCREEN ---------*/
 @media only screen and (max-width: 600px) {
   .collapsibleTitle{
     width: 85%;
+    font-size: 1.5em;
   }
   figure{
     width: 90%;
-  }
-  .introImage{
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
   }
-  .txtContainer{
-    width: 100%;
-    margin: 0%;
-    padding: 1em;
+  .introImage{
+    width: 90%;
+    padding: 0%;
+    height: auto;
   }
   .subtitle{
-    width: 100%;
+    width: 90%;
   }
   .chapters,.activity, .project,.credits{
-    width: 100%;
-    margin: 0%;
+    width: 90%;
+    margin: -0.1% 5% 2% 5%;
   }
   .credits{
     margin-top: -2em;
   }
-  .cardActivity{
-    width: 90%;
-    margin: 1% 0% 5% 5%;
+  .cardActivity, .card,.cardProject{
+      width: 90%;
+      margin:2% 5%;
   }
   .cardImg{
     height: auto;
