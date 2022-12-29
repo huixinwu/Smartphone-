@@ -96,7 +96,7 @@
   max-height: 0px;
   box-shadow: 2px 2px 5px gray;
   transition: max-height 0.5s;
-  background-color: rgba(220,220,220,0.9);
+  background-color: rgba(250,250,250,0.9);
 }
 .tab input:checked ~ .tab-content{
   max-height: 500px;
@@ -127,9 +127,9 @@
 }
 .nav_menu:hover{
   font-weight: 600;
-  color:var(--secondary);
+  color:var(--secondaryLight);
   transition:ease 0.3s;
-  background-color: rgba(150,150,150,0.9);
+  background-color: rgba(100,100,100,0.8);
 }
 /* ------------------------------------------------------*/
 /* -------------------- INTRO IMAGE ---------------------*/
@@ -498,7 +498,12 @@ dt, dd b{color: var(--primaryDark);}
     margin-left: 5%;
     margin-top: 50%;
   }
-  .introParagraph{color: white;font-size: 2.5em; position: absolute;right: 5%; left: 5%; bottom:10%; text-align: center; width: 90%; padding: 0%; background-color: rgba(0,0,0,0.2); border-radius: 0.1em;}
+  .introParagraph{color: white;
+    font-size: 2.5em; 
+    position: absolute;right: 5%; left: 5%; bottom:10%; text-align: center; 
+    width: 90%; padding: 0%; 
+    background-color: rgba(0,0,0,0.2); 
+    border-radius: 0.1em;}
   .chapters, .activity, .credits, .project{
     width: 90%;
     margin-left: 5%;
@@ -552,12 +557,18 @@ dt, dd b{color: var(--primaryDark);}
 }
 /*---------- SMALL SCREEN ---------*/
 @media only screen and (max-width: 600px) {
-  .collapsible_menu{font-size: 1.2em;}
+  .activity,.project,.chapters,.txtContainer,.introImgContainer,.introImage,.credits,.sessionSubtitle,.sessionTitle {width: 98%; margin: 1%; overflow: hidden;}
+  .subtitle{padding-top: 2em;}
+  .txtContainer{text-align: left;}
+  .introImgContainer{left: 0%;margin-top: 5em;}
+  .collapsibleContainer{width: 100%;}
+  .collapsible_menu{font-size: 1.2em;width: 80%;}
+  .tab label{padding: 0%;}
   .collapsibleTitle{
     width: 85%;
     font-size: 1.5em;
   }
-  .introParagraph{font-size: 1.5em;}
+  .introParagraph{font-size: 1.3em;}
   .introImage{
     width: 100%;
     padding: 0%;
@@ -567,7 +578,7 @@ dt, dd b{color: var(--primaryDark);}
     width: 90%;
     margin: 5%;
   }
-  .sessionTitle{font-size: 1.2em;}
+  .sessionTitle{font-size: 1.1em;}
 }
 /*---------- X-SMALL SCREEN ---------*/
 @media only screen and (max-width: 400px) {
