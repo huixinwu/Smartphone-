@@ -64,7 +64,7 @@ h3{
 }
 /* download link */
 .download{
-    background-color: var(--primary);
+    background-color: var(--primaryDark);
     color: whitesmoke;
     display: inline-block;
     padding: 0.5em 2em;
