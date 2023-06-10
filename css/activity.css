@@ -1,3 +1,4 @@
+*{box-sizing: border-box;}
 .activityTitle{
   width: 100%;
   margin: auto;
@@ -81,12 +82,24 @@ h3{
   width: 80%;
   margin: 3% auto;
 }
-.table_title{text-align: center; height: 2em; background-color: rgb(230, 230, 230); font-size: 1.1em;}
-.table_subtitle{ text-align: center; font-weight: bold; background-color: rgb(240, 240, 240);
+.table_title{
+  text-align: center; 
+  height: 2em; 
+  background-color: rgb(230, 230, 230); font-size: 1.1em;
 }
-td{padding: 0.5em; border: dotted lightgray 1px;}
+.table_subtitle{ 
+  text-align: center; 
+  font-weight: bold; 
+  background-color: rgb(240, 240, 240);
+}
+td{
+  padding: 0.5em; 
+  border: dotted lightgray 1px;}
 td:nth-child(2){
   text-align: center;
+}
+.table_total{
+  text-align:right; padding: 0.5em 1em;
 }
 /* --- winners --*/
 .winners_projects{
@@ -146,6 +159,10 @@ td:nth-child(2){
   }
   .navActivity a{width: 100%; 
     padding: 0.7em; 
+  }
+  .table_activity{
+    width: 100%;
+    font-size: 0.8em;
   }
 }
 /*
